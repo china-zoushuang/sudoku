@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sudoku</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<script src="./js/util.js"></script>
+	<script src="./js/initData.js"></script>
+	<script src="./js/initDom.js"></script>
+	<script src="./js/check.js"></script>
+	<script src="./js/answer.js"></script>
+	<script src="./js/initPop.js"></script>
+	<script src="./js/do.js"></script>
+	<script src="./js/win.js"></script>
+	<script>
+		var LENGTH = 9
+		var BODYNODE = document.body
+		var data
+		var rowArray
+		var colArray
+		window.onload = function () {
+			initData()
+			initDom()
+		}
+	</script>
+	<div class="buttons-warpper">
+		<div class="buttons">
+			<button>初级</button>
+			<button>中级</button>
+			<button>高级</button>
+			<button>重置</button>
+		</div>
+	</div>
+</body>
+</html>
